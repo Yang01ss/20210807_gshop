@@ -30,7 +30,12 @@
     background-color: @color;
   }
 }
-
+.border-1px(@color) {
+  border: 1px solid rgba(@color);
+}
+.border-none() {
+  border: none;
+}
 //根据像素比缩放1px像素边框
 @media only screen and (-webkit-device-pixel-ratio: 2) {
   .border-1px {
